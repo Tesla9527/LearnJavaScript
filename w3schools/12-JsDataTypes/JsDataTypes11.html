@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Learning JavaScript</title>
+    <style>
+      * {
+        font-family: 'Microsoft YaHei';
+      }
+    </style>
+</head>
+<body>
+
+<p>Variables can be emptied by setting the value to <b>undefined</b>.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+var person = undefined;
+document.getElementById("demo").innerHTML =
+person + "<br>" + typeof person;
+</script>
+
+</body>
+</html>
