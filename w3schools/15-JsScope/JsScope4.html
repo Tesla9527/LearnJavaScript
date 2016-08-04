@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Learning JavaScript</title>
+    <style>
+      * {
+        font-family: 'Microsoft YaHei';
+      }
+    </style>
+</head>
+<body>
+
+<p>
+In HTML, all global variables will become window variables.
+</p>
+
+<p id="demo"></p>
+
+<script>
+var carName = "Volvo";
+
+// code here can use window.carName
+document.getElementById("demo").innerHTML = "I can display " + window.carName;
+</script>
+
+</body>
+</html>

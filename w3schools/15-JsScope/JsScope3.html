@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Learning JavaScript</title>
+    <style>
+      * {
+        font-family: 'Microsoft YaHei';
+      }
+    </style>
+</head>
+<body>
+
+<p>
+If you assign a value to a variable that has not been declared,
+it will automatically become a GLOBAL variable:
+</p>
+
+<p id="demo"></p>
+
+<script>
+myFunction();
+
+// code here can use carName as a global variable
+document.getElementById("demo").innerHTML = "I can display " + carName;
+
+function myFunction() {
+    carName = "Volvo";
+}
+</script>
+
+</body>
+</html>
