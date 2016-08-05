@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Learning JavaScript</title>
+    <style>
+      * {
+        font-family: 'Microsoft YaHei';
+      }
+    </style>
+</head>
+<body>
+
+<p id="p1">Please locate where 'locate' occurs!.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("p1").innerHTML;
+    var pos = str.search("locate");
+    document.getElementById("demo").innerHTML = pos;
+}
+</script>
+
+</body>
+</html>
