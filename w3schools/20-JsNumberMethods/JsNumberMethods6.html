@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Learning JavaScript</title>
+    <style>
+      * {
+        font-family: 'Microsoft YaHei';
+      }
+    </style>
+</head>
+<body>
+
+<p>The global JavaScript function Number() converts variables to numbers:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+    Number(true) + "<br>" +
+    Number(false) + "<br>" +
+    Number(new Date()) + "<br>" +
+    Number("  10") + "<br>" +
+    Number("10  ") + "<br>" +
+    Number("10 6");
+</script>
+
+</body>
+</html>
