@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Learning JavaScript</title>
+    <style>
+      * {
+        font-family: 'Microsoft YaHei';
+      }
+    </style>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var text;
+switch (new Date().getDay()) {
+    case 6:
+        text = "Today is Saturday";
+        break;
+    case 0:
+        text = "Today is Sunday";
+        break;
+    default:
+        text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
