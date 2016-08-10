@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Learning JavaScript</title>
+    <style>
+      * {
+        font-family: 'Microsoft YaHei';
+      }
+    </style>
+</head>
+<body>
+
+<p>Click the button (again and again) to sort the array in random order.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction() {
+    points.sort(function(a, b){return 0.5 - Math.random()});
+    document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
